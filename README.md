@@ -8,7 +8,7 @@ Popcorn Tracker is... yeap, you got it, a Series and Movies tracker! I'm doing t
 ## Features
 -Search information about a movie/series (future feature)
 - Waiting, Seen, Watching lists (future feature)
-- Dark mode (future feature)
+- Light mode (Who dares to like light mode dude??)(future feature)
   
 ## Building 🚀
 -Frontend (working on it)
