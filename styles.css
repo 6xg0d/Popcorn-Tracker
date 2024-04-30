@@ -10,6 +10,7 @@ body {
 	flex-direction: column;
 	background-color: #212529;
 	min-height: 100vh;
+	min-width: 350px;
 }
 
 header,
@@ -28,6 +29,7 @@ header {
 	background-color: #2b2d42;
 	height: 10vh;
 }
+
 nav > a {
 	text-decoration: none;
 	color: #fff;
@@ -40,13 +42,16 @@ nav > a:hover {
 	color: #adb5bd;
 	transition: ease 0.2s;
 }
+nav > a.active {
+	color: skyblue;
+}
 /*Main*/
 main {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	padding: 20px;
-	gap: 80px 20px;
+	gap: 50px 20px;
 }
 .card {
 	color: #fff;
@@ -62,8 +67,9 @@ main {
 .opinion-section {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-	column-gap: 5px;
+	justify-content: center;
+	align-items: flex-start;
+	column-gap: 4px;
 	text-align: center;
 	font-size: 14px;
 	font-weight: 600;
@@ -82,14 +88,7 @@ main {
 .card > .series-info > p {
 	line-height: 1.5;
 }
-/*
-.card:hover {
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-	transition: ease 0.3s;
-	cursor: pointer;
-	opacity: 0.9;
-}
-*/
+
 .card > .series-info:hover{
 	opacity: 1;
 	transition: ease 0.5s;
@@ -100,15 +99,18 @@ main {
 	object-fit: cover;
 	border-radius: 5px;
 }
-.opinion-section .personal-rating {
-	padding: 4px;
+.opinion-section .imdb-rating {
+	display: block;
+	text-decoration: none;
+	padding: 5px 15px;
 	border-radius: 25px;
 	background-color: #ffb703;
-}
-.opinion-section .imdb-rating {
-	padding: 4px;
-	border-radius: 25px;
-	background-color: #c1121f;
+	color: #000;
+	transition: ease-in-out 0.4s;
+} 
+
+.opinion-section .imdb-rating:hover {
+	background-color: #da9c04;
 }
 
 footer {
