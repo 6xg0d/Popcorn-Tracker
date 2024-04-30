@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Jost, sans-serif;
+}
+/*Body*/
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #212529;
+	min-height: 100vh;
+}
+
+header,
+footer {
+	flex-grow: 0;
+  flex-shrink: 0;
+}
+main {
+	flex-grow: 1;
+}
+/*Header*/
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #2b2d42;
+	height: 10vh;
+}
+nav > a {
+	text-decoration: none;
+	color: #fff;
+	margin: 0 10px;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+nav > a:hover {
+	color: #adb5bd;
+	transition: ease 0.2s;
+}
+/*Main*/
+main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 20px;
+	gap: 80px 20px;
+}
+.card {
+	color: #fff;
+	width: 250px;
+	height: 350px;
+	position: relative;
+}
+.series-info {
+	display: flex;
+	row-gap: 0.5em;
+	flex-flow: column nowrap;
+}
+.opinion-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	column-gap: 5px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: hsla(0, 0%, 0%, 0.8);
+}
+.card > .series-info {
+	opacity: 0;
+	color: #fff;
+	background-color: hsla(0, 0%, 0%, 0.9);
+	top: 0;
+	position: absolute;
+	height: 100%;
+	padding: 20px;
+	border-radius: 5px;
+}
+.card > .series-info > p {
+	line-height: 1.5;
+}
+/*
+.card:hover {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+	transition: ease 0.3s;
+	cursor: pointer;
+	opacity: 0.9;
+}
+*/
+.card > .series-info:hover{
+	opacity: 1;
+	transition: ease 0.5s;
+}
+.card > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.opinion-section .personal-rating {
+	padding: 4px;
+	border-radius: 25px;
+	background-color: #ffb703;
+}
+.opinion-section .imdb-rating {
+	padding: 4px;
+	border-radius: 25px;
+	background-color: #c1121f;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	height: 10vh;
+	background-color: #2b2d42;
+	color: whitesmoke;
+	text-align: center;
+	color: #fff;
+}
+footer a {
+	text-decoration: none;
+	color: #adb5bd;
+}
+footer a:hover {
+	color: #fff;
+	transition: ease 0.2s;
+}
+footer i {
+	color: #c1121f;
+}
+
+.menu {
+
+}
