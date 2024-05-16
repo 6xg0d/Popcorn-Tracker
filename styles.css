@@ -20,9 +20,8 @@ body {
 }
 header,
 footer {
-	flex-grow: 0;
-  	flex-shrink: 0;
-  	background-color: var(--main-background);
+  flex-shrink: 0;
+  background-color: var(--main-background);
 }
 
 /*Header*/
@@ -34,11 +33,15 @@ header {
 	border-bottom: 1px solid hsla(200, 33%, 31%, 0.3);
 	border-radius: 0 0 15px 15px;
 }
-
+nav {
+	display: flex;
+	justify-content: center;
+	column-gap: 20px;
+}
 nav > a {
+	display: inline-block;
 	text-decoration: none;
 	color: #fff;
-	margin: 0 10px;
 	font-size: 1em;
 	font-weight: 600;
 	transition: ease 0.2s;
@@ -106,10 +109,10 @@ main {
 	opacity: 0;
 	color: #fff;
 	background-color: hsla(0, 0%, 0%, 0.9);
-	top: 0;
 	position: absolute;
+	top: 0;
 	height: 100%;
-	padding: 10px 20px;
+	padding: 10px 15px;
 	transition: ease 0.5s;
 }
 .card > .series-info > p {
@@ -119,6 +122,7 @@ main {
 	opacity: 1;
 }
 .card > img {
+	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -141,7 +145,6 @@ footer {
 	align-items: center;
 	height: 50px;
 	color: var(--main-text-color);
-	text-align: center;
 	border-top: 1px solid hsla(200, 33%, 31%, 0.3);
 	border-radius: 15px 15px 0 0;
 }
